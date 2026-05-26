@@ -1,7 +1,4 @@
 """Logprob-based confidence baselines.
-
-Implements Section 4.6 of the paper: four target-side baselines derived from
-generation-time token statistics.
 """
 
 import numpy as np
