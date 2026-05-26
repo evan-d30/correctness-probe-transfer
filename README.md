@@ -114,16 +114,7 @@ Total disk usage: ~200GB for hidden states (float16), plus ~5GB for generated re
 
 ## Citation
 
-If you find this work useful, please cite:
-
-```bibtex
-@inproceedings{anonymous2026probes,
-  title={Do Correctness Probes Transfer? A Cross-Family Study of LLM Hidden States},
-  author={Anonymous},
-  booktitle={Proceedings of EMNLP},
-  year={2026}
-}
-```
+To release soon.
 
 ## License
 
@@ -133,4 +124,4 @@ Note that the underlying models (Qwen3, Llama-3.1, Gemma-2) and datasets (GSM8K,
 
 ## Contact
 
-For questions about the paper or code, please open an issue on this repository.
+For questions about the paper or code, please email me at evanduan2@gmail.com
