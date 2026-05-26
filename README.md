@@ -7,6 +7,18 @@ This repository contains code and analysis for the paper:
 
 We study out-of-distribution transfer of response-level correctness probes across three open-weight LLM families (Qwen3-8B, Llama-3.1-8B, Gemma-2-9B), seven datasets, and four task families.
 
+## Smoke test
+
+We recommend running the full pipeline, verify your environment with the smoke test as we did with our own project as well.
+
+\`\`\`bash
+jupyter notebook notebooks/smoke_test.ipynb
+\`\`\`
+
+This runs a minimal end-to-end pipeline on Qwen2.5-1.5B with 50 GSM8K problems in about 3–5 minutes on a free Colab T4 GPU. If the per-layer AUC plot shows a clear peak above 0.5 in the middle-to-late layers, your environment is set up correctly and you can proceed to the full pipeline.
+
+See `notebooks/README.md` for details.
+
 ## Key findings
 
 1. **Within-family transfer is stronger than cross-family transfer** (0.075 AUC gap in the averaged matrix), with the clearest pattern in code generation.
