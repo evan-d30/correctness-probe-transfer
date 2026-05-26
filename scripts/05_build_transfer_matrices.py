@@ -23,11 +23,6 @@ import numpy as np
 import pandas as pd
 import yaml
 
-# Imports from src/ would go here, e.g.:
-# from src.probes.train import evaluate_probe_on_target, select_best_layer_constrained
-# from src.utils.io import load_probe, load_hidden_states, load_labels
-
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -70,8 +65,7 @@ def parse_args() -> argparse.Namespace:
         help="Path to probe configuration YAML",
     )
     return parser.parse_args()
-
-
+  
 def build_transfer_matrix(
     model: str,
     datasets: list[str],
