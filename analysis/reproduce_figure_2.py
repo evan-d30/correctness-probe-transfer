@@ -14,8 +14,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-
-# Display names matching the paper
 DATASET_DISPLAY = {
     "gsm8k": "gsm8k",
     "math500": "math500",
@@ -25,7 +23,6 @@ DATASET_DISPLAY = {
     "humaneval": "humaneval",
     "triviaqa": "triviaqa",
 }
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -45,7 +42,6 @@ def parse_args() -> argparse.Namespace:
         default=Path("results/figures/figure_2_averaged_transfer.pdf"),
     )
     return parser.parse_args()
-
 
 def main() -> None:
     args = parse_args()
@@ -72,7 +68,6 @@ def main() -> None:
     fig.savefig(args.output_png, dpi=300)
     fig.savefig(args.output_pdf)
     print(f"Wrote {args.output_png} and {args.output_pdf}")
-
 
 if __name__ == "__main__":
     main()
