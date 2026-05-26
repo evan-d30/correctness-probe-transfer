@@ -1,7 +1,4 @@
 """Cosine similarity between probe weight vectors.
-
-Implements Section 4.5 of the paper: compute pairwise cosine similarity
-between probes trained at a model-specific shared layer.
 """
 
 import numpy as np
