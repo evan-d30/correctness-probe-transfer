@@ -124,4 +124,4 @@ Note that the underlying models (Qwen3, Llama-3.1, Gemma-2) and datasets (GSM8K,
 
 ## Contact
 
-For questions about the paper or code, please email me at evanduan2@gmail.com
+To release soon.
