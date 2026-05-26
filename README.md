@@ -18,7 +18,10 @@ We study out-of-distribution transfer of response-level correctness probes acros
 
 ```
 .
+├── analysis/        # Scripts to reproduce paper tables and figures
 ├── configs/         # YAML configs for models, datasets, and probe hyperparameters
+├── data/            # Dataset loading (no raw data committed)
+└── results/         # Output directory for computed results
 ├── src/             # Core library code
 │   ├── generation/  # Response generation
 │   ├── grading/     # Dataset-specific correctness graders
@@ -26,9 +29,6 @@ We study out-of-distribution transfer of response-level correctness probes acros
 │   ├── probes/      # Probe training, transfer, cosine analysis
 │   └── baselines/   # Logprob baseline computation
 ├── scripts/         # Pipeline scripts (run in order: 01 → 07)
-├── analysis/        # Scripts to reproduce paper tables and figures
-├── data/            # Dataset loading (no raw data committed)
-└── results/         # Output directory for computed results
 ```
 
 ## Installation
