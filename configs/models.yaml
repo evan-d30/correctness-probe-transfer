@@ -1,0 +1,33 @@
+models:
+  qwen3-8b:
+    huggingface_id: Qwen/Qwen3-8B
+    family: qwen3
+    params: 8B
+    layers: 36
+    hidden_dim: 4096
+    chat_template: default
+    dtype: float16
+
+  llama-3.1-8b:
+    huggingface_id: meta-llama/Llama-3.1-8B-Instruct
+    family: llama
+    params: 8B
+    layers: 32
+    hidden_dim: 4096
+    chat_template: default
+    dtype: float16
+
+  gemma-2-9b:
+    huggingface_id: google/gemma-2-9b-it
+    family: gemma
+    params: 9B
+    layers: 42
+    hidden_dim: 3584
+    chat_template: default
+    dtype: float16
+
+generation:
+  do_sample: false
+  max_new_tokens: 2048
+  temperature: null  # ignored when do_sample=false
+  top_p: null

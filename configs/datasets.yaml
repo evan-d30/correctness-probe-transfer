@@ -1,0 +1,67 @@
+datasets:
+  gsm8k:
+    family: math
+    huggingface_id: openai/gsm8k
+    subset: main
+    split: test
+    n_samples: 1000
+    sample_seed: 42
+    grader: math
+    answer_anchor: "Final Answer:"
+
+  math500:
+    family: math
+    huggingface_id: HuggingFaceH4/MATH-500
+    split: test
+    n_samples: 500
+    sample_seed: 42
+    grader: math
+    answer_anchor: "\\boxed"
+
+  mmlu_pro:
+    family: multiple_choice
+    huggingface_id: TIGER-Lab/MMLU-Pro
+    split: test
+    n_samples: 1000
+    sample_seed: 42
+    grader: multiple_choice
+    answer_anchor: "Answer:"
+
+  mbpp_test:
+    family: code
+    huggingface_id: google-research-datasets/mbpp
+    subset: sanitized
+    split: test
+    n_samples: null  # use full split
+    sample_seed: 42
+    grader: code
+    answer_anchor: null
+
+  mbpp_train:
+    family: code
+    huggingface_id: google-research-datasets/mbpp
+    subset: sanitized
+    split: train
+    n_samples: null  # use full split
+    sample_seed: 42
+    grader: code
+    answer_anchor: null
+
+  humaneval:
+    family: code
+    huggingface_id: openai/openai_humaneval
+    split: test
+    n_samples: null  # use full split
+    sample_seed: 42
+    grader: code
+    answer_anchor: null
+
+  triviaqa:
+    family: factual
+    huggingface_id: mandarjoshi/trivia_qa
+    subset: rc.nocontext
+    split: validation
+    n_samples: 1000
+    sample_seed: 42
+    grader: factual
+    answer_anchor: "Final Answer:"
