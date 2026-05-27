@@ -3,7 +3,6 @@
 This repository contains code and analysis for the paper:
 
 > **Do Correctness Probes Transfer? A Cross-Family Study of LLM Hidden States**
-> *Anonymous submission to EMNLP*
 
 We study out-of-distribution transfer of response-level correctness probes across three open-weight LLM families (Qwen3-8B, Llama-3.1-8B, Gemma-2-9B), seven datasets, and four task families.
 
