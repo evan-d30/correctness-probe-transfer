@@ -1,7 +1,7 @@
 # Do Correctness Probes Transfer? A Cross-Family Study of LLM Hidden States
 
 > [!IMPORTANT]
-> **Sept 8, 2026 — We are excited to announce that our paper has been accepted to IJCNLP-AACL 2026 (Main Conference).** 🎉
+> **Sept 8, 2026 — We are excited to announce that our paper has been accepted to IJCNLP-AACL 2026 (Main Conference) held in Hengqing, China.** 🎉
 
 This repository contains code and analysis for the paper:
 
